@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | [Tu Nombre]</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>[Tu Nombre]</h1>
+                <p>Abogado Especializado</p>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="about.html">Sobre Mí</a></li>
+                    <li class="active"><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Estoy aquí para ayudarte</p>
+        </div>
+    </section>
+
+    <section class="contacto">
+        <div class="container">
+            <div class="contacto-info">
+                <h3>Información de Contacto</h3>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>[Tu Dirección Completa]<br>[Ciudad, País]</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>[Tu Teléfono]<br>[WhatsApp si es diferente]</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>[Tu Email Profesional]</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Lunes a Viernes: 9am - 6pm<br>Sábados: 10am - 2pm</p>
+                </div>
+            </div>
+
+            <div class="contacto-form">
+                <h3>Envíame un Mensaje</h3>
+                <form id="formContacto" action="procesar.php" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="nombre" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="telefono" placeholder="Teléfono">
+                    </div>
+                    <div class="form-group">
+                        <select name="servicio" required>
+                            <option value="">Seleccione un servicio</option>
+                            <option value="penal">Derecho Penal</option>
+                            <option value="civil">Derecho Civil</option>
+                            <option value="laboral">Derecho Laboral</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="mensaje" placeholder="Describe brevemente tu caso" required></textarea>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="privacidad" name="privacidad" required>
+                        <label for="privacidad">Acepto la política de privacidad</label>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="mapa">
+        <div class="container">
+            <h3>Ubicación del Bufete</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d[LATITUD]!2d[LONGITUD]!3d[ZOOM]!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z[LATITUD]![LONGITUD]!5e0!3m2!1ses!2ses!4v[FECHA]!5m2!1ses!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <!-- El mismo footer que en index.html -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+  </html>
